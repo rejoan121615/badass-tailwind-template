@@ -5,12 +5,16 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "concurrently --kill-others \"tailwindcss -i ./src/css/style.css -o ./src/css-dist/build.css --watch\" \"browser-sync start --server --files \"src/**/*\""
+        "dev": "concurrently --kill-others \"tailwindcss -i ./src/css/style.css -o ./src/css-dist/build.css --watch\" \"browser-sync start --server --files \"src/**/*\"",
+        "start": "nodemon start"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "tailwindcss": "^3.0.16"
+    },
+    "dependencies": {
+        "nodemon": "^2.0.15"
     }
 }

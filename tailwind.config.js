@@ -6,6 +6,13 @@ module.exports = {
                 oswald: ["Oswald", "sans-serif"],
                 roboto: ["Roboto", "sans-serif"],
             },
+            colors: {
+                "not-gray": "#ced6dc",
+                "half-black": "#292f33",
+            },
+            screens: {
+                'mxl': "1800px"
+            }
         },
     },
     plugins: [],
